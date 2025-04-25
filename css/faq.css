@@ -1,0 +1,134 @@
+.faq-section {
+  background-color: var(--background);
+  padding: 4rem 2rem;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item { 
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.faq-question {
+  background-color: #0f1825;
+  color: var(--text);
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-question:after {
+  content: '+';
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.faq-answer {
+  padding: 1.5rem;
+  color: var(--background);
+  display: none;
+  line-height: 1.6;
+  border-radius: 15px;
+}
+
+.faq-item.active .faq-question:after {
+  content: '-';
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  color: var(--text);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .faq-section {
+    padding: 2rem 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+}
+.contact-section {
+  background-color: var(--background);
+  padding: 4rem 2rem;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  background-color: #0f1825;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #182436c4;
+    color: var(--text);  
+  }
+.submit-btn {
+  background-color: var(--primary);
+  color: var(--text);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+h2 {
+  text-align: center;
+  color: var(--text);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+  
+  .contact-form {
+    padding: 1.5rem;
+  }
+}

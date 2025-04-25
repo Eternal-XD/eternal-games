@@ -1,0 +1,150 @@
+.blog-header {
+  background-color: var(--background);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.blog-header h1 {
+  color: var(--text);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro-text { 
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--text);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.blog-posts {
+  background-color: var(--background);
+  padding: 4rem 2rem;
+}
+
+.blog-post {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  display: flex;
+  background-color: #0f1825;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.post-image {
+  flex: 0 0 40%;
+}
+
+.post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-content {
+  flex: 0 0 60%;
+  padding: 2rem;
+}
+
+.post-content h2 {
+  color: var(--text);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.post-content p {
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.read-more {
+  background-color: var(--primary);
+  color: var(--text);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.read-more:hover {
+  opacity: 0.9;
+}
+.games-showcase {
+  background-color: var(--background);
+  padding: 2rem;
+}
+
+.showcase-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.game-preview {
+  position: relative;
+  width: 280px;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.game-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.release-date {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--text);
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.game-preview:hover img {
+  transform: scale(1.1);
+}
+
+.game-preview:hover .release-date {
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+  .game-preview {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .blog-post {
+    flex-direction: column;
+  }
+
+  .post-image {
+    flex: 0 0 200px;
+  }
+
+  .blog-header h1 {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+  }
+}

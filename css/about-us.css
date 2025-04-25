@@ -1,0 +1,127 @@
+.about-us {
+  background-color: var(--background);
+  padding: 4rem 2rem;
+  color: var(--text);
+}
+
+.about-us-content { 
+  max-width: 1200px;
+  margin: 0 auto;
+} 
+
+.about-us h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin: 3rem 0 1.5rem;
+  color: var(--primary);
+}
+
+.about-us h3 {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.locations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+
+.branches {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.map {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(139, 131, 211, 0.2);
+}
+
+
+.what-we-offer ul,
+.why-choose-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.what-we-offer li,
+.why-choose-us li {
+  list-style: none;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.what-we-offer li:before,
+.why-choose-us li:before {
+  list-style: none;
+  content: "•";
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .locations {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-us h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-us h2 {
+    font-size: 1.8rem;
+  }
+}
+.branch-comparison {
+  margin: 4rem 0;
+}
+
+.comparison-table {
+  background: #26354da2;
+  border-radius: 15px;
+  padding: 2rem;
+  overflow-x: auto;
+}
+
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--text);
+}
+
+.comparison-table th {
+  background: #34496bd5;;
+  padding: 1rem;
+  text-align: left;
+}
+
+.comparison-table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.table-footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+  color: var(--text);
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <title>Eternal Games │ Checkout</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img href="index.html" src="images/logo.png" alt="logo" />
+        <h1>Eternal Games</h1>
+      </div>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about-us.html">About Us</a>
+        </li>
+        <li>
+          <a href="games.html">Games</a>
+        </li>
+        <li class="dropdown">
+          <a href="#">Products</a>
+          <ul class="dropdown-content">
+            <li><a href="peripherals.html">Peripherals</a></li>
+            <li><a href="consoles.html">Consoles</a></li>
+            <li><a href="computerparts.html">Computer Parts</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="upcominggames.html">Blog</a>
+        </li>
+        <li>
+          <a href="faq.html">FAQ</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+    <div class="menubar">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about-us.html">About Us</a>
+        </li>
+        <li>
+          <a href="games.html">Games</a>
+        </li>
+        <li>
+          <a href="peripherals.html">Peripherals</a>
+        </li>
+        <li>
+          <a href="consoles.html">Consoles</a>
+        </li>
+        <li>
+          <a href="computerparts.html">Computer Parts</a>
+        </li>
+        <li>
+          <a href="upcominggames.html">Blog</a>
+        </li>
+        <li>
+          <a href="faq.html">FAQ</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="checkout-section">
+      <h1>Checkout</h1>
+      
+      <div class="checkout-container">
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <div class="order-items">
+            <table class="order-table">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody id="order-items">
+                <!-- Order items will be added here dynamically -->
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3">Total</td>
+                  <td id="order-total">Rs. 0.00</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+        
+        <div class="checkout-form">
+          <h2>Your Information</h2>
+          <form id="payment-form">
+            <div class="form-section">
+              <h3>Personal Details</h3>
+              <div class="form-group">
+                <label for="fullname">Full Name*</label>
+                <input type="text" id="fullname" name="fullname" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+            
+            <div class="form-section">
+              <h3>Delivery Details</h3>
+              <div class="form-group">
+                <label for="address">Street Address*</label>
+                <input type="text" id="address" name="address" required>
+              </div>
+              <div class="form-group">
+                <label for="city">City*</label>
+                <input type="text" id="city" name="city" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="state">State/Province*</label>
+                  <input type="text" id="state" name="state" required>
+                </div>
+                <div class="form-group">
+                  <label for="zip">Postal Code*</label>
+                  <input type="text" id="zip" name="zip" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="country">Country*</label>
+                <select id="country" name="country" required>
+                  <option value="">Select Country</option>
+                  <option value="Sri Lanka">Sri Lanka</option>
+                  <option value="India">India</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="Bangladesh">Bangladesh</option>
+                  <option value="Nepal">Nepal</option>
+                  <option value="Bhutan">Bhutan</option>
+                  <option value="Maldives">Maldives</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-section">
+              <h3>Payment Information</h3>
+              <div class="form-group">
+                <label for="card-name">Name on Card*</label>
+                <input type="text" id="card-name" name="card-name" required>
+              </div>
+              <div class="form-group">
+                <label for="card-number">Card Number*</label>
+                <input type="text" id="card-number" name="card-number" placeholder="XXXX XXXX XXXX XXXX" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="expiry">Expiry Date*</label>
+                  <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                  <label for="cvv">CVV*</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="XXX" required>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-actions">
+              <button type="button" id="back-to-cart" class="secondary-btn">Back to Cart</button>
+              <button type="submit" id="pay-now" class="primary-btn">Pay Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <div id="success-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">×</span>
+        <h2>Thank You for Your Purchase!</h2>
+        <p>Your order has been successfully placed.</p>
+        <p>Order #: <span id="order-number"></span></p>
+        <p>Estimated delivery date: <span id="delivery-date"></span></p>
+        <p>A confirmation email has been sent to <span id="customer-email"></span>.</p>
+        <button id="continue-shopping" class="primary-btn">Continue Shopping</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="logo">
+            <img src="images/logo.png" alt="logo" />
+            <h1>Eternal Games</h1>
+          </div>
+          <p>123 Gaming Street, Digital City</p>
+          <p>contact@eternalgames.com</p>
+        </div>
+        
+        <div class="footer-right">
+          <div class="footer-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="upcominggames.html">Blog</a></li>
+            </ul>
+            <ul>
+              <li><a href="consoles.html">Consoles</a></li>
+              <li><a href="peripherals.html">Peripherals</a></li>
+              <li><a href="computerparts.html">Computer Parts</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="faq.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Eternal Games. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="checkout.js"></script>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+  </body>
+</html>
